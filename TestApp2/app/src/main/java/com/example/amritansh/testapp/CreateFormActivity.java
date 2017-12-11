@@ -80,6 +80,12 @@ public class CreateFormActivity extends AppCompatActivity {
         EditText e=(EditText)findViewById(R.id.inage);
         int age=Integer.parseInt(e.getText().toString());
         if(age>15)age--;
+        else {
+            AlertDialog a = new AlertDialog.Builder(CreateFormActivity.this).create();
+            a.setTitle("Not Allowed!");
+            a.setMessage("To Register, your age must be at least 15.");
+            a.show();
+        }
         e.setText(""+age);
     }
     public void incage(View v){
