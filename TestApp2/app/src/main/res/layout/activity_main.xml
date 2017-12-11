@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search Here"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        />
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:onClick="myfunc"
+        >
+
+        <ImageView
+            android:id="@+id/s1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/star"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/s1"
+            android:gravity="center"
+            android:layout_toRightOf="@id/s1"
+            android:layout_alignTop="@id/s1"
+            android:textSize="30sp"
+            android:textColor="#7e02a7"
+            android:textStyle="bold"
+            android:text="STUDENT 1" />
+
+        <TextView
+            android:id="@+id/s1_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/s1"
+            android:text="HardCoder"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#39e605"
+            android:fontFamily="casual"/>
+
+
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        />
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+
+
+        >
+
+        <ImageView
+            android:id="@+id/s2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/star"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/s2_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/s2"
+            android:gravity="center"
+            android:layout_toRightOf="@id/s2"
+            android:layout_alignTop="@id/s2"
+            android:textSize="30sp"
+            android:textColor="#7e02a7"
+            android:textStyle="bold"
+            android:text="STUDENT 2" />
+
+        <TextView
+            android:id="@+id/s2_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/s2"
+            android:text="Dev Guy"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#39e605"
+            android:fontFamily="casual"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        android:layout_below="@id/s2_3"
+        />
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+
+
+        >
+
+        <ImageView
+            android:id="@+id/s3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/star"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/s3_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/s3"
+            android:gravity="center"
+            android:layout_toRightOf="@id/s3"
+            android:layout_alignTop="@id/s3"
+            android:textSize="30sp"
+            android:textColor="#7e02a7"
+            android:textStyle="bold"
+            android:text="STUDENT 3" />
+
+        <TextView
+            android:id="@+id/s3_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/s3"
+            android:text="ML Hero"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#39e605"
+            android:fontFamily="casual"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="19dp"
+            android:clickable="true"
+            app:backgroundTint="@android:color/holo_blue_dark"
+            app:srcCompat="@android:drawable/ic_input_add"
+            android:onClick="loadform"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        android:layout_below="@id/s3_3"
+        />
+
+
+</LinearLayout>
+
+
+
+</ScrollView>
